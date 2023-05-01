@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!--Leaflet css-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+
+    <!--Leaflet js-->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <header>
+          <h1>IP Address Tracker</h1>
+        </header>
+        <form class="search-bar">
+          <label for="search-input" class="visually-hidden">Search:</label>
+          <input
+            type="text"
+            name="search-input"
+            id="search-input"
+            autofocus
+            placeholder="Search for any IP address or domain"
+          />
+          <button type="submit" id="search-button">
+            <img src="../dist/images//icon-arrow.svg" alt="search-icon" id="icon" />
+            <span id="loader" class="loader" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+          </button>
+        </form>
+        <div class="result-card" id="result-element">
+          <div class="ip-sect">
+            <span>IP Address</span>
+            <span id="ip-address"></span>
+          </div>
+          <hr class="solid" />
+          <div class="loc-sect">
+            <span>Location</span>
+            <span id="location"></span>
+          </div>
+          <hr class="solid" />
+          <div class="zone-sect">
+            <span>Timezone UTC</span>
+            <span id="timezone"></span>
+          </div>
+          <hr class="solid" />
+          <div class="isp-sect">
+            <span>ISP</span>
+            <span id="isp"></span>
+          </div>
+        </div>
+      </div>
+      <button id="expand-btn">
+        <img src="../dist/images/icons8-maximize-window-30.png" alt="maximize_icon" height="20px" />
+      </button>
+      <div id="map" aria-label="Map"></div>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
