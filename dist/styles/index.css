@@ -219,13 +219,16 @@ header {
 }
 
 @media (max-width: 960px) {
+  .content {
+    background-image: url(../images/pattern-bg-mobile.png);
+  }
   .result-card {
     flex-direction: column;
     max-width: 200px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    bottom: -25rem !important;
+    bottom: -15rem !important;
   }
   form {
     max-width: 200px !important;
