@@ -182,6 +182,6 @@ form?.addEventListener("submit", function (e: SubmitEvent) {
       ipAddress: search_input.value,
     });
   } else {
-    alert("unknown parameter");
+    alert("invalid parameter");
   }
 });
