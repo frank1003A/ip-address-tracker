@@ -24,17 +24,18 @@ let isCardInFront = false;
 const map = L.map("map");
 const API_KEY = "at_U9S38hGHy8KZnQMgwS7rbI4ZQw6p3";
 
+// Marker Icon
+const mIcon = L.icon({
+  iconUrl: "https://shorturl.at/egoy5",
+  iconSize: [60, 95],
+  iconAnchor: [22, 94],
+  popupAnchor: [-3, -76],
+  shadowSize: [68, 95],
+  shadowAnchor: [22, 94],
+});
+
 // change map location i.e add location icon to leaflet map
 const renderMarker = (lat: number, lng: number) => {
-  const mIcon = L.icon({
-    iconUrl: "https://shorturl.at/egoy5",
-    iconSize: [60, 95],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76],
-    shadowSize: [68, 95],
-    shadowAnchor: [22, 94],
-  });
-
   let marker = new L.Marker(
     {
       lat: lat,
