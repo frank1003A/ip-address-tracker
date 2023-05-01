@@ -27,7 +27,7 @@ const API_KEY = "at_U9S38hGHy8KZnQMgwS7rbI4ZQw6p3";
 // change map location i.e add location icon to leaflet map
 const renderMarker = (lat: number, lng: number) => {
   const mIcon = L.icon({
-    iconUrl: "../dist/images/icon-location.svg",
+    iconUrl: "https://github.com/frank1003A/ip-address-tracker/blob/83df2fcd131a8fb8935aa158ecee2529e44f49be/dist/images/icon-location.svg",
     iconSize: [60, 95],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
